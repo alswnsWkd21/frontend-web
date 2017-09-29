@@ -5,11 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style media="screen">
+    #viewer{
+      width: 450px;
+      overflow: hidden;
+      height: 85px;
+      position: relative;
+      border:1px gray solid;
+    }
+    #wrap{
+      position: relative;
+      width: 1300px;
+
+    }
+
+  </style>
 </head>
 <body>
-<div id="wrap"></div>
-<div><a href="">왼쪽 버튼</a></div>
-<div><a href="">오른쪽 버튼</a></div>
+<div id="viewer">
+  <div id="wrap">
+
+  </div>
+</div>
+
+<div><a >왼쪽 버튼</a></div>
+<div><a >오른쪽 버튼</a></div>
 <script src="carousel.js"></script>
 </body>
 </html>

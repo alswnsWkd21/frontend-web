@@ -13,13 +13,10 @@ var todayPhoto = [
 
    var str = '';
 var log = document.querySelectorAll('#log');
-   var divs = document.querySelectorAll('div a');
-   console.log(divs);
 
-   function leftshift(event){
-     
-   }
-   divs[0].addEventListener('click', leftshift);
+var count = 0;
+var str = '';
+ var button = document.querySelectorAll('div a');
 
    for(var i=0; i<todayPhoto.length; i++){
 
@@ -27,3 +24,29 @@ var log = document.querySelectorAll('#log');
    }
 
    wrap.innerHTML = str;
+ var divs = document.querySelectorAll('div img');
+
+
+    function leftshift(event){
+
+      count +=divs[0].width+5;
+      if(count>0){
+        count = -451;
+      }
+      str = count+'px';
+      console.log();
+     //  wrap.style.left = '-80px';
+      wrap.style.left = str;
+
+    }
+    function rightshift(event){
+      if(count<-452){
+        count=0;
+      }
+      count -=divs[0].width+5;
+      str = count+'px';
+      console.log(str);
+      wrap.style.left = str;
+    }
+ button[0].addEventListener('click', leftshift);
+ button[1].addEventListener('click', rightshift);
