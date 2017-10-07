@@ -31,7 +31,7 @@ var str = '';
 
       count +=divs[0].width+5;
       if(count>0){
-        count = -451;
+        count = -452;
       }
       str = count+'px';
       console.log();
@@ -40,10 +40,11 @@ var str = '';
 
     }
     function rightshift(event){
+    count -=divs[0].width+5;
       if(count<-452){
         count=0;
       }
-      count -=divs[0].width+5;
+
       str = count+'px';
       console.log(str);
       wrap.style.left = str;
