@@ -22,3 +22,10 @@ StringInput.addEventListener('keypress', function (e) {
       StringInput.value = '';
     }
 });
+// delete 버튼을 누르면 삭제하는 li 하나를 삭제하는 코드
+list.addEventListener('click', function(e){
+  console.log(e.target);
+  e.target.parentNode;
+  console.log(e.target.parentNode);
+  list.removeChild(e.target.parentNode);
+})
