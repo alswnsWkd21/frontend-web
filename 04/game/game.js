@@ -55,7 +55,7 @@ $gameboard.addEventListener('click', function(e){  // box눌렀을 때 초기화
     $gameboard.removeChild($box[0]);
   }else{
     addMiss();
-    if(miss>10){
+    if(miss==10){
       alert("미션실패!!");
       location.reload();     // 새로고침
     }
