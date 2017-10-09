@@ -9,7 +9,7 @@ var level =1;
 var miss =0;
 windowheight = window.innerHeight; //window 높이
 windowwidth = window.innerWidth; // window 넓이
-$gameboard.style.height =windowheight+"px";
+$gameboard.style.height =windowheight-66+"px";
 $gameboard.style.width = windowwidth +"px";
 
 random(); // 첫 초기화
