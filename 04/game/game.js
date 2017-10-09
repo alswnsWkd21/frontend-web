@@ -42,6 +42,7 @@ function addLevel(){ //level 올리고 나머지 reset 함수
 function addMiss(){ // miss 올리는 함수
   miss +=1;
    $miss.innerHTML="Miss:"+miss;
+   random();
 }
 
 $gameboard.addEventListener('click', function(e){  // box눌렀을 때 초기화 및 점수 레벨 미스 셋팅 함수 !!
