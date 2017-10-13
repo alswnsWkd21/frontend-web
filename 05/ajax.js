@@ -5,7 +5,17 @@ btn.addEventListener('click', load);
 function load(){
   console.log('load');
   var request = new XMLHttpRequest();
+  request.open('GET', 'dummy.json', true);
 
-  request.open('GET', 'dummy', true);
-  console.log(reuqest);
+
+  request.onreadystatechange=function(){
+    if(request.readyState === 4){
+      if(request.status ===200){
+       console.log(request.responseText)
+      }
+
+    }
+}
+request.send();
+
 }

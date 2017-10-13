@@ -1,7 +1,4 @@
 {
-
-"nick" : "aji",
-"age" : 30,
-"area" :  "jeju",
-"hobby" : ["movie","walk"]
+    "nick" : "aji",
+    "area" :  "jeju"
 };
