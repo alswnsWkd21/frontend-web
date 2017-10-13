@@ -5,7 +5,7 @@ btn.addEventListener('click', load);
 function load(){
   console.log('load');
   var request = new XMLHttpRequest();
-  request.open('GET', 'dummy.json', true);
+  request.open('GET', '1boon.kakao.com/index.json', true);
 
 
   request.onreadystatechange=function(){
