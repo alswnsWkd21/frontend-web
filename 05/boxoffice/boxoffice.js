@@ -10,9 +10,13 @@ function done(result){
 
   for(var i = 0; i<result.data.length; i++){
     console.log(result.data[i].titleKo)
-    str += '<h2>'+result.data[i].titleKo+'</h2>'
+    str += '<div class='+'item'+'>'
     str +='<img src=' + result.data[i].photo.fullname+' width="100">'
-    str += ''
+    str += '<h2>'+result.data[i].titleKo+'</h2>'
+    str += '<p>점유율'+result.data[i].rank.marketShare+'</p>'
+    str += '</div>'
+    str += '<hr>'
+
   }
 
   info.innerHTML = str;

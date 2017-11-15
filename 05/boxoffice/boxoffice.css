@@ -3,3 +3,11 @@
   width: 100%;
   background-color: blue;
 }
+img{
+  float: left;
+}
+.item::after{
+  content: "";
+  display: block;
+  clear: both;
+}
