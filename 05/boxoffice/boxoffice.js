@@ -12,8 +12,9 @@ function done(result){
     console.log(result.data[i].titleKo)
     str += '<div class='+'item'+'>'
     str +='<img src=' + result.data[i].photo.fullname+' width="100">'
-    str += '<h2>'+result.data[i].titleKo+'</h2>'
+    str += '<h5>'+result.data[i].titleKo+'</h5>'
     str += '<p>점유율'+result.data[i].rank.marketShare+'</p>'
+    str += '<button>예매</button>'
     str += '</div>'
     str += '<hr>'
 

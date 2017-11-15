@@ -11,3 +11,16 @@ img{
   display: block;
   clear: both;
 }
+h5{
+  margin-left: 110px;
+}
+p{
+  margin-left: 110px;
+  font-size: 10px;
+}
+
+button{
+  margin-top: 56px;
+  margin-left: 10px;
+  padding: 0 20px;
+}
