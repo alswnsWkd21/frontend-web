@@ -25,8 +25,12 @@
 //   $('div').animate({top: 200}, 1000);
 // })
 
+//
+// $('#login').on('click',function(event){
+//
+//   window.open($(event.currentTarget).attr('href'), 'login', 'width=')
+// })
 
-$('#login').on('click',function(event){
-
-  window.open($(event.currentTarget).attr('href'), 'login', 'width=')
+$('#btn').on('click',function(){
+  $('div').animate({top: 200}, 1000);
 })
