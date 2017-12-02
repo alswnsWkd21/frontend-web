@@ -9,45 +9,41 @@ var todayPhoto = [
        ,{"url":"http://sports.media.daum.net/general/gallery/STARKIMYUNA/index.html","img":"http://icon.daumcdn.net/w/c/12/05/81727815537682839.jpeg","title":"&#39;교생&#39; 김연아, 스승의날에도 인기폭발","id":"20120516092003892"}
    ];
 
-   var wrap = document.getElementById('wrap');
-
-   var str = '';
+var wrap = document.getElementById('wrap');
+var str = '';
 var log = document.querySelectorAll('#log');
-
 var count = 0;
 var str = '';
- var button = document.querySelectorAll('div a');
+var button = document.querySelectorAll('div a');
 
-   for(var i=0; i<todayPhoto.length; i++){
+for(var i=0; i<todayPhoto.length; i++){
+  str += '<img src="'+todayPhoto[i].img+'"> ';
+ }
 
-       str += '<img src="'+todayPhoto[i].img+'"> ';
-   }
+wrap.innerHTML = str;
+var divs = document.querySelectorAll('div img');
 
-   wrap.innerHTML = str;
- var divs = document.querySelectorAll('div img');
+//왼쪽으로
+  function leftshift(event){
 
-
-    function leftshift(event){
-
-      count +=divs[0].width+5;
-      if(count>0){
-        count = -452;
-      }
-      str = count+'px';
-      console.log();
-     //  wrap.style.left = '-80px';
-      wrap.style.left = str;
-
+    count +=divs[0].width+5;
+    if(count>0){
+      count = -452;
     }
-    function rightshift(event){
+    str = count+'px';
+    console.log();
+    //  wrap.style.left = '-80px';
+    wrap.style.left = str;
+    }
+    //오른쪽으로
+  function rightshift(event){
     count -=divs[0].width+5;
-      if(count<-452){
-        count=0;
-      }
-
-      str = count+'px';
-      console.log(str);
-      wrap.style.left = str;
+    if(count<-452){
+      count=0;
     }
+    str = count+'px';
+    console.log(str);
+    wrap.style.left = str;
+  }
  button[0].addEventListener('click', leftshift);
  button[1].addEventListener('click', rightshift);

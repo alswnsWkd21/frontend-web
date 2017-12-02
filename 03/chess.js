@@ -1,4 +1,5 @@
 var board = document.getElementById("board");
+//체스판 생성하기
   for(var i=0; i<4; i++){
       for(var j=0; j<4; j++){
         if(i%2==0){
@@ -20,10 +21,12 @@ var board = document.getElementById("board");
 
       }
   }
+  //보드가져오기
   var divs = document.getElementById('#board');
   var past;
+  //색상바꾸기
   function colorchange(event){
-
+    // 처음에는 past존재x 이를 이용해 분개
     if(past){
 
       past.style.backgroundColor='';

@@ -33,9 +33,6 @@ $('#remove').on('click', function(event){
 $('#update').on('click', function(event){
   console.log('update');
 
-  // $.put('http://localhost:3000/posts/1', {title: '수정입니다' + (new Date().getTime() ) },  function(data){
-  //   console.log(data);
-  // })
 
   $.ajax({
     url: 'http://localhost:3000/posts/1',
